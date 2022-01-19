@@ -2,13 +2,13 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Flex, Button } from 'theme-ui';
 import Sticky from 'react-stickynode';
-import Logo from 'components/logo';
+// import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 import { DrawerProvider } from 'contexts/drawer/drawer-provider';
 import DrawerNav from './drawer-nav';
 import menuItems from './header.data';
 
-export default function Header() {
+export default function Header({logoName}) {
   return (
     <DrawerProvider>
       <Box sx={styles.headerWrapper}>
@@ -16,7 +16,7 @@ export default function Header() {
           <Box as="header" variant="layout.header">
             <Container>
               <Box sx={styles.headerInner}>
-                <Logo sx={styles.logo} />
+                      {logoName}
                 <Flex as="nav" sx={styles.navbar} className="navbar">
                   <Box as="ul" sx={styles.navList}>
                     {menuItems.map(({ path, label }, i) => (

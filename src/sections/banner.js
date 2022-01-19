@@ -17,21 +17,22 @@ import google from 'assets/images/google.png';
 import dropbox from 'assets/images/dropbox.png';
 import { rgba } from 'polished';
 
-const Banner = () => {
+const Banner = ({productName,tagline,subtagline}) => {
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.content}>
             <Heading as="h1">
-              Build your audience &amp; grow your business online smarter
+              {productName}
             </Heading>
             <Text as="p">
-              Get your blood tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+              {tagline}
             </Text>
-            <Box sx={styles.subscribe}>
+            <Text as="p">
+              {subtagline}
+            </Text>
+            {/* <Box sx={styles.subscribe}>
               <Label htmlFor="email" variant="styles.srOnly">
                 Email
               </Label>
@@ -41,7 +42,7 @@ const Banner = () => {
                 placeholder="Enter Email address"
               />
               <Button variant="primary">Subscribe</Button>
-            </Box>
+            </Box> */}
             <Box sx={styles.sponsoredBy}>
               <Text as="span">Sponsored by:</Text>
               <Box sx={styles.logos}>

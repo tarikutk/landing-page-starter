@@ -36,7 +36,7 @@ const data = [
   },
 ];
 
-const ExcitingFeatures = () => {
+const ExcitingFeatures = ({}) => {
   return (
     <Box as="section" variant="section.excitingFeatures">
       <Container>
