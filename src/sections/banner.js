@@ -6,15 +6,10 @@ import {
   Container,
   Heading,
   Text,
-  Label,
   Image,
-  Button,
 } from 'theme-ui';
-import Input from 'components/input';
 import banner from 'assets/images/banner.png';
-import paypal from 'assets/images/paypal.png';
-import google from 'assets/images/google.png';
-import dropbox from 'assets/images/dropbox.png';
+import ctd from 'assets/images/ctd.png'
 import { rgba } from 'polished';
 
 const Banner = ({productName,tagline,subtagline}) => {
@@ -32,30 +27,11 @@ const Banner = ({productName,tagline,subtagline}) => {
             <Text as="p">
               {subtagline}
             </Text>
-            {/* <Box sx={styles.subscribe}>
-              <Label htmlFor="email" variant="styles.srOnly">
-                Email
-              </Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="Enter Email address"
-              />
-              <Button variant="primary">Subscribe</Button>
-            </Box> */}
             <Box sx={styles.sponsoredBy}>
-              <Text as="span">Sponsored by:</Text>
-              <Box sx={styles.logos}>
+              <Text as="span">Sponsored by:&nbsp;</Text>
                 <Box as="figure" sx={{ display: 'flex' }}>
-                  <Image src={paypal} alt="paypal" />
+                  <Image src={ctd} alt="paypal" width={144}/>
                 </Box>
-                <Box as="figure" sx={{ display: 'flex' }}>
-                  <Image src={google} alt="google" />
-                </Box>
-                <Box as="figure" sx={{ display: 'flex' }}>
-                  <Image src={dropbox} alt="dropbox" />
-                </Box>
-              </Box>
             </Box>
           </Box>
           <Box as="figure" sx={styles.illustration}>

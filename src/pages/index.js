@@ -13,8 +13,8 @@ import icon1 from 'assets/images/icons/1.png';
 import icon2 from 'assets/images/icons/2.png';
 import icon3 from 'assets/images/icons/3.png';
 
-const logoName = 'Placeholder for the App Title'
-const productName = 'Product Name';
+const logoName = 'Logo will go here'
+const productName = 'Product Name will go here';
 const tagline = 'In one line Why is your product important to users';
 
 const subtagline = 'In one to two sentences explain the value propositon';
@@ -49,7 +49,7 @@ const valuePropsitions = [{
   description: `Additional Content`,
 }];
 
-const benefitted = [{id: 1, label: 'Person 1'},{id: 2, label: 'Person 2'},{id: 3, label: 'Person 3'}]
+const benefits = [{id: 1, label: 'Person 1'},{id: 2, label: 'Person 2'},{id: 3, label: 'Person 3'}]
 
 export default function IndexPage() {
   return (
@@ -57,7 +57,7 @@ export default function IndexPage() {
       <Layout logoName={logoName}>
         <Banner  productName={productName} tagline={tagline} subtagline={subtagline}/>
         <Services visionStatment={visionStatment} feature={feature}/>
-        <WorkHard benefitted={benefitted}/>
+        <WorkHard benefits={benefits}/>
         <UltimateFeatures valuesTitle={valuesTitle} valueSubTitle={valueSubTitle} valuePropsitions={valuePropsitions} />
       </Layout>
     </ThemeProvider>

@@ -7,7 +7,7 @@ import workHard from 'assets/images/work-hard.png';
 import emoji from 'assets/images/icons/emoji.png';
 import check from 'assets/images/icons/check-circle.png';
 
-const WorkHard = ({benefitted}) => {
+const WorkHard = ({benefits}) => {
   return (
     <Box as="section" variant="section.workHard">
       <Container>
@@ -20,7 +20,7 @@ const WorkHard = ({benefitted}) => {
               description="Values for the consumer"
             />
             <Box sx={styles.features}>
-              {benefitted?.map(({ id, label }) => (
+              {benefits?.map(({ id, label }) => (
                 <Flex key={id} as="span" sx={{ alignItems: 'flex-start' }}>
                   <Image src={check} alt="" />
                   <Text as="span">{label}</Text>
