@@ -38,7 +38,7 @@ const data = [
 
 const ExcitingFeatures = ({}) => {
   return (
-    <Box as="section" variant="section.excitingFeatures">
+    <Box as="section" id='humanValues' variant="section.excitingFeatures">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.illustration}>

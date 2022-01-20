@@ -1,20 +1,20 @@
 export default [
   {
     path: 'home',
-    label: 'Home',
+    label: 'Product Info',
   },
   {
     path: 'services',
-    label: 'Services',
-  },
-  {
-    path: 'features',
-    label: 'Features',
+    label: 'Our Vision',
   },
   // {
-  //   path: 'blog',
-  //   label: 'Blog',
+  //   path: 'humanValues',
+  //   label: 'Wow',
   // },
+  {
+    path: 'features',
+    label: 'Value Proposition',
+  },
   // {
   //   path: 'login',
   //   label: 'Login',

@@ -43,8 +43,8 @@ const WorkHard = ({benefitted}) => {
             <SectionHeading
               emoji={emoji}
               sx={styles.heading}
-              title="Don’t work hard, be smart &amp; work smartly. Take a relax sit"
-              description=""
+              title="Value"
+              description="Values for the consumer"
             />
             <Box sx={styles.features}>
               {benefitted?.map(({ id, label }) => (
