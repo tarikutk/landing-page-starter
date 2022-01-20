@@ -25,13 +25,13 @@ export default function Header({logoName}) {
                       </li>
                     ))}
                   </Box>
-                  <Button variant="text" sx={styles.getStartedDesktop}>
+                  {/* <Button variant="text" sx={styles.getStartedDesktop}>
                     Get Started
-                  </Button>
+                  </Button> */}
                 </Flex>
-                <Button variant="text" sx={styles.getStartedMobile}>
+                {/* <Button variant="text" sx={styles.getStartedMobile}>
                   Get Started
-                </Button>
+                </Button> */}
                 <DrawerNav />
               </Box>
             </Container>
@@ -107,10 +107,10 @@ const styles = {
     display: ['flex'],
     listStyle: 'none',
     flexGrow: 1,
-    p: 0,
-    'li:last-child': {
-      ml: ['auto'],
-    },
+    // p: 0,
+    // 'li:last-child': {
+    //   ml: ['auto'],
+    // },
     '.nav-item': {
       cursor: 'pointer',
       fontWeight: 400,

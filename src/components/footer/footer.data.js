@@ -56,79 +56,79 @@ export const menuItems = [
       },
     ],
   },
-  {
-    id: 4,
-    title: 'My Account',
-    items: [
-      {
-        path: '#!',
-        label: 'Press inquiries',
-      },
-      {
-        path: '#!',
-        label: 'Social media ',
-      },
-      {
-        path: '#!',
-        label: 'directories',
-      },
-      {
-        path: '#!',
-        label: 'Images & B-roll',
-      },
-      {
-        path: '#!',
-        label: 'Permissions',
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: 'Connect',
-    items: [
-      {
-        path: '#!',
-        icon: facebook,
-        label: 'Facebook',
-      },
-      {
-        path: '#!',
-        icon: twitter,
-        label: 'Twitter',
-      },
-      {
-        path: '#!',
-        icon: github,
-        label: 'Github',
-      },
-      {
-        path: '#!',
-        icon: dribbble,
-        label: 'Dribbble',
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: 'My Account',
+  //   items: [
+  //     {
+  //       path: '#!',
+  //       label: 'Press inquiries',
+  //     },
+  //     {
+  //       path: '#!',
+  //       label: 'Social media ',
+  //     },
+  //     {
+  //       path: '#!',
+  //       label: 'directories',
+  //     },
+  //     {
+  //       path: '#!',
+  //       label: 'Images & B-roll',
+  //     },
+  //     {
+  //       path: '#!',
+  //       label: 'Permissions',
+  //     },
+  //   ],
+  // },
+//   {
+//     id: 5,
+//     title: 'Connect',
+//     items: [
+//       {
+//         path: '#!',
+//         icon: facebook,
+//         label: 'Facebook',
+//       },
+//       {
+//         path: '#!',
+//         icon: twitter,
+//         label: 'Twitter',
+//       },
+//       {
+//         path: '#!',
+//         icon: github,
+//         label: 'Github',
+//       },
+//       {
+//         path: '#!',
+//         icon: dribbble,
+//         label: 'Dribbble',
+//       },
+//     ],
+//   },
 ];
 
-export const footerNav = [
-  {
-    path: '#!',
-    label: 'Home',
-  },
-  {
-    path: '#!',
-    label: 'Advertise',
-  },
-  {
-    path: '#!',
-    label: 'Supports',
-  },
-  {
-    path: '#!',
-    label: 'Marketing',
-  },
-  {
-    path: '#!',
-    label: 'FAQ',
-  },
-];
+// export const footerNav = [
+//   {
+//     path: '#!',
+//     label: 'Home',
+//   },
+//   {
+//     path: '#!',
+//     label: 'Advertise',
+//   },
+//   {
+//     path: '#!',
+//     label: 'Supports',
+//   },
+//   {
+//     path: '#!',
+//     label: 'Marketing',
+//   },
+//   {
+//     path: '#!',
+//     label: 'FAQ',
+//   },
+// ];

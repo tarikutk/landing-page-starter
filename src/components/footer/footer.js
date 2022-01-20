@@ -42,8 +42,8 @@ const styles = {
       'repeat(2, 1fr)',
       'repeat(2, 1fr)',
       'repeat(2, 1fr)',
-      'repeat(4, 1fr)',
-      'repeat(5, 1fr)',
+      'repeat(6, 1fr)',
+      // 'repeat(5, 1fr)',
     ],
   },
   footerInner: {
