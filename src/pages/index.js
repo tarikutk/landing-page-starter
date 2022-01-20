@@ -1,16 +1,11 @@
 import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
-// import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import Services from 'sections/services';
-// import ExcitingFeatures from 'sections/exciting-features';
 import WorkHard from 'sections/work-hard';
 import UltimateFeatures from 'sections/ultimate-features';
-// import HappyCustomer from 'sections/happy-customer';
-// import Blog from 'sections/blog';
-// import SubscribeUs from 'sections/subscribe-us';
 import individual from 'assets/images/icons/individual.png';
 import team from 'assets/images/icons/team.png';
 import org from 'assets/images/icons/org.png';
@@ -63,11 +58,7 @@ export default function IndexPage() {
         <Banner  productName={productName} tagline={tagline} subtagline={subtagline}/>
         <Services visionStatment={visionStatment} feature={feature}/>
         <WorkHard benefitted={benefitted}/>
-        {/* <Blog /> */}
         <UltimateFeatures valuesTitle={valuesTitle} valueSubTitle={valueSubTitle} valuePropsitions={valuePropsitions} />
-        {/* <ExcitingFeatures valuePropsitions={valuePropsitions}/> */}
-        {/* <HappyCustomer /> */}
-        {/* <SubscribeUs /> */}
       </Layout>
     </ThemeProvider>
   );

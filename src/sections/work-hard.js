@@ -7,33 +7,6 @@ import workHard from 'assets/images/work-hard.png';
 import emoji from 'assets/images/icons/emoji.png';
 import check from 'assets/images/icons/check-circle.png';
 
-const data = [
-  {
-    id: 1,
-    label: 'Medical and vision',
-  },
-  {
-    id: 2,
-    label: 'Life insurance',
-  },
-  {
-    id: 3,
-    label: '400(k) savings',
-  },
-  {
-    id: 4,
-    label: 'HSAs and FSAs',
-  },
-  {
-    id: 5,
-    label: 'Commuter benefits',
-  },
-  {
-    id: 6,
-    label: '529 college savings',
-  },
-];
-
 const WorkHard = ({benefitted}) => {
   return (
     <Box as="section" variant="section.workHard">
