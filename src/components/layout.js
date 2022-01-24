@@ -11,6 +11,7 @@ export default function Layout({ children , logoName }) {
       <main
         sx={{
           variant: 'layout.main',
+          padding: '20px 0'
         }}
       >
         {children}

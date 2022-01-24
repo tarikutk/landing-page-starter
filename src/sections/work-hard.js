@@ -16,8 +16,8 @@ const WorkHard = ({benefitted}) => {
             <SectionHeading
               emoji={emoji}
               sx={styles.heading}
-              title="Value"
-              description="Values for the consumer"
+              title="Our Product Benefits..."
+              description="for the consumer"
             />
             <Box sx={styles.features}>
               {benefitted?.map(({ id, label }) => (

@@ -6,18 +6,13 @@ import Banner from 'sections/banner';
 import Services from 'sections/services';
 import WorkHard from 'sections/work-hard';
 import UltimateFeatures from 'sections/ultimate-features';
-import individual from 'assets/images/icons/individual.png';
-import team from 'assets/images/icons/team.png';
-import org from 'assets/images/icons/org.png';
-import icon1 from 'assets/images/icons/1.png';
-import icon2 from 'assets/images/icons/2.png';
-import icon3 from 'assets/images/icons/3.png';
+import {individual,team,org,icon1,icon2,icon3} from 'assets/images/icons'
 
-const logoName = 'Placeholder for the App Title'
+const logoName = '💣 app logo 🤖'
 const productName = 'Product Name';
 const tagline = 'In one line Why is your product important to users';
 
-const subtagline = 'In one to two sentences explain the value propositon';
+// const subtagline = 'In one to two sentences explain the value propositon';
 const visionStatment = 'In a couple of sentence please describe the the product vision statement';
 
 const feature = [
@@ -42,23 +37,23 @@ const valuePropsitions = [{
 },
 {
   id: 2, icon: icon2, path: '#!', title: 'Reason 2',
-  description: `Additional Content`,
+  description: `Additional Content for reason 2`,
 },
 {
   id: 3, icon: icon3, path: '#!', title: 'Reason 3',
-  description: `Additional Content`,
+  description: `Additional Content for reason 3`,
 }];
 
-const benefitted = [{id: 1, label: 'Person 1'},{id: 2, label: 'Person 2'},{id: 3, label: 'Person 3'}]
+const benefitted = [{id: 1, label: 'John Doe'},{id: 2, label: 'Jane Smith'},{id: 3, label: 'Jack Wilks'}]
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout logoName={logoName}>
-        <Banner  productName={productName} tagline={tagline} subtagline={subtagline}/>
+        <Banner  productName={productName} tagline={tagline} />
         <Services visionStatment={visionStatment} feature={feature}/>
-        <WorkHard benefitted={benefitted}/>
         <UltimateFeatures valuesTitle={valuesTitle} valueSubTitle={valueSubTitle} valuePropsitions={valuePropsitions} />
+        <WorkHard benefitted={benefitted}/>
       </Layout>
     </ThemeProvider>
   );

@@ -74,6 +74,7 @@ const styles = {
         width: '100%',
         left: 0,
         p: '20px 30px',
+        margin: '20px 30px',
         display: 'block',
         boxShadow: '0 6px 13px rgba(38,78,118,0.1)',
         opacity: 0,

@@ -33,27 +33,6 @@ const data = [
     title: 'Secure Transaction',
     description: `Get your info tests delivered at home collect a sample from the your task.`,
   },
-  // {
-  //   id: 4,
-  //   icon: icon4,
-  //   path: '#!',
-  //   title: 'Multiple Options',
-  //   description: `Get your info tests delivered at home collect a sample from the your task.`,
-  // },
-  // {
-  //   id: 5,
-  //   icon: icon5,
-  //   path: '#!',
-  //   title: '5 Star Rating service',
-  //   description: `Get your info tests delivered at home collect a sample from the your task.`,
-  // },
-  // {
-  //   id: 6,
-  //   icon: icon6,
-  //   path: '#!',
-  //   title: 'Integrated with Shopify',
-  //   description: `Get your info tests delivered at home collect a sample from the your task.`,
-  // },
 ];
 
 const UltimateFeatures = ({valuesTitle, valueSubTitle, valuePropsitions}) => {

@@ -12,6 +12,7 @@ import {
 } from 'theme-ui';
 import Input from 'components/input';
 import banner from 'assets/images/banner.png';
+import ctd from 'assets/images/ctd-favicon.png';
 import paypal from 'assets/images/paypal.png';
 import google from 'assets/images/google.png';
 import dropbox from 'assets/images/dropbox.png';
@@ -43,11 +44,11 @@ const Banner = ({productName,tagline,subtagline}) => {
               />
               <Button variant="primary">Subscribe</Button>
             </Box> */}
-            <Box sx={styles.sponsoredBy}>
+            {/* <Box sx={styles.sponsoredBy}>
               <Text as="span">Sponsored by:</Text>
               <Box sx={styles.logos}>
                 <Box as="figure" sx={{ display: 'flex' }}>
-                  <Image src={paypal} alt="paypal" />
+                  <Image src={ctd} alt="paypal" />
                 </Box>
                 <Box as="figure" sx={{ display: 'flex' }}>
                   <Image src={google} alt="google" />
@@ -56,7 +57,7 @@ const Banner = ({productName,tagline,subtagline}) => {
                   <Image src={dropbox} alt="dropbox" />
                 </Box>
               </Box>
-            </Box>
+            </Box> */}
           </Box>
           <Box as="figure" sx={styles.illustration}>
             <Image src={banner} alt="banner" />
