@@ -24,7 +24,7 @@ const Banner = ({productName,tagline,subtagline}) => {
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.content}>
-            <Heading as="h1">
+            <Heading as="h2">
               {productName}
             </Heading>
             <Text as="p">
@@ -89,6 +89,13 @@ const styles = {
       fontFamily: 'Crimson Text, Serif',
       fontWeight: 600,
       fontSize: ['34px', '34px', '34px', '44px', '40px', '49px', '62px'],
+      lineHeight: [1.26, 1.26, 1.11, 1.4, 1.11],
+    },
+    h2: {
+      color: 'textSecondary',
+      fontFamily: 'Crimson Text, Serif',
+      fontWeight: 500,
+      fontSize: ['30px', '30px', '30px', '44px', '40px', '39px', '51px'],
       lineHeight: [1.26, 1.26, 1.11, 1.4, 1.11],
     },
     p: {

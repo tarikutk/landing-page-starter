@@ -16,7 +16,7 @@ export default function Layout({ children , logoName }) {
       >
         {children}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }

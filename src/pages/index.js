@@ -8,7 +8,7 @@ import WorkHard from 'sections/work-hard';
 import UltimateFeatures from 'sections/ultimate-features';
 import {individual,team,org,icon1,icon2,icon3} from 'assets/images/icons'
 
-const logoName = '💣 app logo 🤖'
+const logoName = '💣 app logo 🤖' // text in here will be Capitalized h1
 const productName = 'Product Name';
 const tagline = 'In one line Why is your product important to users';
 
@@ -30,7 +30,7 @@ const feature = [
   }];
 
 const valuesTitle = 'Values Title';
-const valueSubTitle = 'Subtitle this is'
+const valueSubTitle = 'Values Subtitle'
 const valuePropsitions = [{
   id: 1, icon: icon1, path: '#!', title: 'Reason 1', 
   description: `Primary Reason that customers find values`,
