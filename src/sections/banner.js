@@ -11,14 +11,14 @@ import {
   Button,
 } from 'theme-ui';
 import Input from 'components/input';
-import banner from 'assets/images/banner.png';
+// import banner from 'assets/images/banner.png';
 import ctd from 'assets/images/ctd-favicon.png';
 import paypal from 'assets/images/paypal.png';
 import google from 'assets/images/google.png';
 import dropbox from 'assets/images/dropbox.png';
 import { rgba } from 'polished';
 
-const Banner = ({productName,tagline,subtagline}) => {
+const Banner = ({productName,tagline,subtagline, img}) => {
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
@@ -60,7 +60,7 @@ const Banner = ({productName,tagline,subtagline}) => {
             </Box> */}
           </Box>
           <Box as="figure" sx={styles.illustration}>
-            <Image src={banner} alt="banner" />
+            <Image src={img} alt="banner" />
           </Box>
         </Box>
       </Container>

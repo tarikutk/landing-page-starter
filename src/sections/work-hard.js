@@ -7,7 +7,7 @@ import workHard from 'assets/images/work-hard.png';
 import emoji from 'assets/images/icons/emoji.png';
 import check from 'assets/images/icons/check-circle.png';
 
-const WorkHard = ({benefitted}) => {
+const WorkHard = ({benefitted, img}) => {
   return (
     <Box as="section" variant="section.workHard">
       <Container>
@@ -32,7 +32,7 @@ const WorkHard = ({benefitted}) => {
             </Box>
           </Box>
           <Box sx={styles.illustration}>
-            <Image src={workHard} alt="workHard" />
+            <Image src={img} alt="workHard" />
           </Box>
         </Box>
       </Container>

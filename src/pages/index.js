@@ -7,14 +7,14 @@ import Services from 'sections/services';
 import WorkHard from 'sections/work-hard';
 import UltimateFeatures from 'sections/ultimate-features';
 import {individual,team,org,icon1,icon2,icon3} from 'assets/images/icons'
+import banner from 'assets/images/banner.png';
+import workHard from 'assets/images/work-hard.png';
 
-const logoName = '💣 app logo 🤖' // text in here will be Capitalized h1
+console.log('image: ', banner);
+
 const productName = 'Product Name';
 const tagline = 'In one line Why is your product important to users';
-
-// const subtagline = 'In one to two sentences explain the value propositon';
 const visionStatment = 'In a couple of sentence please describe the the product vision statement';
-
 const feature = [
   {
     id: 1, icon: individual, title: 'Feature 1',
@@ -28,7 +28,6 @@ const feature = [
     id: 3, icon: org, title: 'Feature 3',
     description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
   }];
-
 const valuesTitle = 'Values Title';
 const valueSubTitle = 'Values Subtitle'
 const valuePropsitions = [{
@@ -43,17 +42,18 @@ const valuePropsitions = [{
   id: 3, icon: icon3, path: '#!', title: 'Reason 3',
   description: `Additional Content for reason 3`,
 }];
-
 const benefitted = [{id: 1, label: 'John Doe'},{id: 2, label: 'Jane Smith'},{id: 3, label: 'Jack Wilks'}]
+
+
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
-      <Layout logoName={logoName}>
-        <Banner  productName={productName} tagline={tagline} />
+      <Layout logoName={productName}>
+        <Banner productName={productName} tagline={tagline} img={banner}/>
         <Services visionStatment={visionStatment} feature={feature}/>
         <UltimateFeatures valuesTitle={valuesTitle} valueSubTitle={valueSubTitle} valuePropsitions={valuePropsitions} />
-        <WorkHard benefitted={benefitted}/>
+        <WorkHard benefitted={benefitted} img={workHard}/>
       </Layout>
     </ThemeProvider>
   );
