@@ -7,34 +7,7 @@ import workHard from 'assets/images/work-hard.png';
 import emoji from 'assets/images/icons/emoji.png';
 import check from 'assets/images/icons/check-circle.png';
 
-const data = [
-  {
-    id: 1,
-    label: 'Medical and vision',
-  },
-  {
-    id: 2,
-    label: 'Life insurance',
-  },
-  {
-    id: 3,
-    label: '400(k) savings',
-  },
-  {
-    id: 4,
-    label: 'HSAs and FSAs',
-  },
-  {
-    id: 5,
-    label: 'Commuter benefits',
-  },
-  {
-    id: 6,
-    label: '529 college savings',
-  },
-];
-
-const WorkHard = () => {
+const WorkHard = ({benefitted, img}) => {
   return (
     <Box as="section" variant="section.workHard">
       <Container>
@@ -43,11 +16,11 @@ const WorkHard = () => {
             <SectionHeading
               emoji={emoji}
               sx={styles.heading}
-              title="Don’t work hard, be smart &amp; work smartly. Take a relax sit"
-              description="Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever."
+              title="Our Product Benefits..."
+              description="for the consumer"
             />
             <Box sx={styles.features}>
-              {data?.map(({ id, label }) => (
+              {benefitted?.map(({ id, label }) => (
                 <Flex key={id} as="span" sx={{ alignItems: 'flex-start' }}>
                   <Image src={check} alt="" />
                   <Text as="span">{label}</Text>
@@ -59,7 +32,7 @@ const WorkHard = () => {
             </Box>
           </Box>
           <Box sx={styles.illustration}>
-            <Image src={workHard} alt="workHard" />
+            <Image src={img} alt="workHard" />
           </Box>
         </Box>
       </Container>

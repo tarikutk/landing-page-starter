@@ -8,7 +8,7 @@ import { DrawerProvider } from 'contexts/drawer/drawer-provider';
 import DrawerNav from './drawer-nav';
 import menuItems from './header.data';
 
-export default function Header() {
+export default function Header({logoName}) {
   return (
     <DrawerProvider>
       <Box sx={styles.headerWrapper}>
@@ -16,7 +16,7 @@ export default function Header() {
           <Box as="header" variant="layout.header">
             <Container>
               <Box sx={styles.headerInner}>
-                <Logo sx={styles.logo} />
+                <Logo sx={styles.logo} logoName={logoName}/>
                 <Flex as="nav" sx={styles.navbar} className="navbar">
                   <Box as="ul" sx={styles.navList}>
                     {menuItems.map(({ path, label }, i) => (
@@ -74,6 +74,7 @@ const styles = {
         width: '100%',
         left: 0,
         p: '20px 30px',
+        margin: '20px 30px',
         display: 'block',
         boxShadow: '0 6px 13px rgba(38,78,118,0.1)',
         opacity: 0,

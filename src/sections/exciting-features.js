@@ -6,39 +6,9 @@ import Accordion from 'components/accordion/accordion';
 import feature from 'assets/images/feature.png';
 import emoji from 'assets/images/icons/emoji-2.png';
 
-const data = [
-  {
-    title: 'Organize your project content',
-    contents: (
-      <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
-      </div>
-    ),
-  },
-  {
-    title: 'Collaborate your documents easily',
-    contents: (
-      <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
-      </div>
-    ),
-  },
-  {
-    title: `Build your team's knowledge base`,
-    contents: (
-      <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
-      </div>
-    ),
-  },
-];
-
-const ExcitingFeatures = () => {
+const ExcitingFeatures = ({}) => {
   return (
-    <Box as="section" variant="section.excitingFeatures">
+    <Box as="section" id='humanValues' variant="section.excitingFeatures">
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.illustration}>

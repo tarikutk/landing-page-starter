@@ -4,18 +4,19 @@ import { jsx } from 'theme-ui';
 import React from 'react';
 import Header from './header/header';
 import Footer from './footer/footer';
-export default function Layout({ children }) {
+export default function Layout({ children , logoName }) {
   return (
     <React.Fragment>
-      <Header />
+      <Header logoName={logoName}/>
       <main
         sx={{
           variant: 'layout.main',
+          padding: '20px 0'
         }}
       >
         {children}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }

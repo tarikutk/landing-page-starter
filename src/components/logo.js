@@ -4,10 +4,10 @@ import { jsx } from 'theme-ui';
 import { Link } from 'components/link';
 import LogoSvg from 'components/icons/logo';
 
-export default function Logo({ isSticky, footer, ...props }) {
+export default function Logo({ isSticky, logoName, footer, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-      <LogoSvg />
+        <h1><a>{logoName}</a></h1>
     </Link>
   );
 }
@@ -16,9 +16,7 @@ const styles = {
     alignItems: 'center',
     cursor: 'pointer',
     display: 'inline-flex',
-    svg: {
-      height: 'auto',
-      width: [128, null, '100%'],
-    },
-  },
+    textTransform: 'uppercase',
+    fontWeight: 'bolder'
+  }
 };

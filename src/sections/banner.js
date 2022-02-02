@@ -11,27 +11,29 @@ import {
   Button,
 } from 'theme-ui';
 import Input from 'components/input';
-import banner from 'assets/images/banner.png';
+// import banner from 'assets/images/banner.png';
+import ctd from 'assets/images/ctd-favicon.png';
 import paypal from 'assets/images/paypal.png';
 import google from 'assets/images/google.png';
 import dropbox from 'assets/images/dropbox.png';
 import { rgba } from 'polished';
 
-const Banner = () => {
+const Banner = ({productName,tagline,subtagline, img}) => {
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.content}>
-            <Heading as="h1">
-              Build your audience &amp; grow your business online smarter
+            <Heading as="h2">
+              {productName}
             </Heading>
             <Text as="p">
-              Get your blood tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+              {tagline}
             </Text>
-            <Box sx={styles.subscribe}>
+            <Text as="p">
+              {subtagline}
+            </Text>
+            {/* <Box sx={styles.subscribe}>
               <Label htmlFor="email" variant="styles.srOnly">
                 Email
               </Label>
@@ -41,12 +43,12 @@ const Banner = () => {
                 placeholder="Enter Email address"
               />
               <Button variant="primary">Subscribe</Button>
-            </Box>
-            <Box sx={styles.sponsoredBy}>
+            </Box> */}
+            {/* <Box sx={styles.sponsoredBy}>
               <Text as="span">Sponsored by:</Text>
               <Box sx={styles.logos}>
                 <Box as="figure" sx={{ display: 'flex' }}>
-                  <Image src={paypal} alt="paypal" />
+                  <Image src={ctd} alt="paypal" />
                 </Box>
                 <Box as="figure" sx={{ display: 'flex' }}>
                   <Image src={google} alt="google" />
@@ -55,10 +57,10 @@ const Banner = () => {
                   <Image src={dropbox} alt="dropbox" />
                 </Box>
               </Box>
-            </Box>
+            </Box> */}
           </Box>
           <Box as="figure" sx={styles.illustration}>
-            <Image src={banner} alt="banner" />
+            <Image src={img} alt="banner" />
           </Box>
         </Box>
       </Container>
@@ -87,6 +89,13 @@ const styles = {
       fontFamily: 'Crimson Text, Serif',
       fontWeight: 600,
       fontSize: ['34px', '34px', '34px', '44px', '40px', '49px', '62px'],
+      lineHeight: [1.26, 1.26, 1.11, 1.4, 1.11],
+    },
+    h2: {
+      color: 'textSecondary',
+      fontFamily: 'Crimson Text, Serif',
+      fontWeight: 500,
+      fontSize: ['30px', '30px', '30px', '44px', '40px', '39px', '51px'],
       lineHeight: [1.26, 1.26, 1.11, 1.4, 1.11],
     },
     p: {

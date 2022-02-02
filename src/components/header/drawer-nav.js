@@ -102,6 +102,7 @@ const styles = {
   wrapper: {
     height: '100%',
     paddingTop: 30,
+    // paddingBottom:30,
     width: '100%',
   },
   logo: {
