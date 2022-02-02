@@ -35,7 +35,7 @@ const data = [
   },
 ];
 
-const UltimateFeatures = ({valuesTitle, valueSubTitle, valuePropsitions}) => {
+const UltimateFeatures = ({valuesTitle, valueSubTitle, valuePropositions}) => {
   return (
     <Box as="section" id="features" variant="section.ultimateFeatures">
       <Container>
@@ -45,7 +45,7 @@ const UltimateFeatures = ({valuesTitle, valueSubTitle, valuePropsitions}) => {
           description={valueSubTitle}
         />
         <Box sx={styles.features}>
-          {valuePropsitions?.map((item) => (
+          {valuePropositions?.map((item) => (
             <Feature className="feature-item" key={item.id} data={item} />
           ))}
         </Box>

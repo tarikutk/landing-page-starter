@@ -11,11 +11,15 @@ import banner from 'assets/images/banner.png';
 import workHard from 'assets/images/work-hard.png';
 
 console.log('image: ', banner);
-
+const image1 = banner;
+const image2 = workHard;
 const productName = 'Product Name';
+
 const tagline = 'In one line Why is your product important to users';
-const visionStatment = 'In a couple of sentence please describe the the product vision statement';
-const feature = [
+
+const visionStatement = 'In a couple of sentence please describe the the product vision statement';
+
+const features = [
   {
     id: 1, icon: individual, title: 'Feature 1',
     description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
@@ -28,9 +32,8 @@ const feature = [
     id: 3, icon: org, title: 'Feature 3',
     description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
   }];
-const valuesTitle = 'Values Title';
-const valueSubTitle = 'Values Subtitle'
-const valuePropsitions = [{
+
+const valuePropositions = [{
   id: 1, icon: icon1, path: '#!', title: 'Reason 1', 
   description: `Primary Reason that customers find values`,
 },
@@ -50,10 +53,10 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout logoName={productName}>
-        <Banner productName={productName} tagline={tagline} img={banner}/>
-        <Services visionStatment={visionStatment} feature={feature}/>
-        <UltimateFeatures valuesTitle={valuesTitle} valueSubTitle={valueSubTitle} valuePropsitions={valuePropsitions} />
-        <WorkHard benefitted={benefitted} img={workHard}/>
+        <Banner productName={productName} tagline={tagline} img={image1}/>
+        <Services visionStatement={visionStatement} feature={features}/>
+        <UltimateFeatures valuePropositions={valuePropositions} />
+        <WorkHard benefitted={benefitted} img={image2}/>
       </Layout>
     </ThemeProvider>
   );
