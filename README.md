@@ -1,3 +1,20 @@
+What's up CTD'er.
+
+1. Fork the repo.
+2. Run yarn or npm install
+3. Fire up a local environment re: instructions below
+```bash
+npm run dev
+# or
+yarn dev
+```
+4. Follow your teams direction in your packet. If you have extra time feel free to make additional changes or swap out the code. 
+
+Have fun!
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
