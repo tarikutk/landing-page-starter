@@ -4,14 +4,14 @@ import { jsx, Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Feature from 'components/cards/feature';
 
-const Services = ({visionStatment, feature}) => {
+const Services = ({visionStatement, feature}) => {
   return (
     <Box as="section" id="services" variant="section.features">
       <Container>
         <SectionHeading
           sx={styles.heading}
           title="Our Vision"
-          description={visionStatment}
+          description={visionStatement}
         />
         <Box sx={styles.features}>
           {feature?.map((item) => (
