@@ -1,6 +1,6 @@
 What's up CTD'er.
 
-1. Fork the repo.
+1. Fork repo & download/clone the repo.
 2. Run `yarn` or `npm install`
 3. Fire up a local environment re: instructions below
 ```bash
