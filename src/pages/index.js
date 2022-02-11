@@ -6,46 +6,46 @@ import Banner from 'sections/banner';
 import Services from 'sections/services';
 import WorkHard from 'sections/work-hard';
 import UltimateFeatures from 'sections/ultimate-features';
-import {individual,team,org,icon1,icon2,icon3} from 'assets/images/icons'
+import { individual, team, org, icon1, icon2, icon3 } from 'assets/images/icons'
 import banner from 'assets/images/banner.png';
 import workHard from 'assets/images/work-hard.png';
 
 console.log('image: ', banner);
 const image1 = banner;
 const image2 = workHard;
-const productName = 'Product Name';
+const productName = 'Music Gig';
 
-const tagline = 'In one line Why is your product important to users';
+const tagline = "For music bands who would like to find a gig, Music Gig App  is a very convenient tool that connects independent bands with club/bars and other venues";
 
-const visionStatement = 'In a couple of sentence please describe the the product vision statement';
+const visionStatement = 'our Vision is to connect bands with clubs and bars';
 
 const features = [
   {
-    id: 1, icon: individual, title: 'Feature 1',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    id: 1, icon: individual, title: 'Book a band',
+    description: `Invite your favorite band to your special event`,
   },
   {
-    id: 2, icon: team, title: 'Feature 2',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    id: 2, icon: team, title: 'Find a Gig',
+    description: `Find a Gig very quick`,
   },
   {
-    id: 3, icon: org, title: 'Feature 3',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    id: 3, icon: org, title: 'Find events',
+    description: `find events with your favorite clubs and bars.`,
   }];
 
 const valuePropositions = [{
-  id: 1, icon: icon1, path: '#!', title: 'Reason 1', 
-  description: `Primary Reason that customers find values`,
+  id: 1, icon: icon1, path: '#!', title: '',
+  description: `we offer direct booking without agents with more variety of venue near you,`,
 },
 {
-  id: 2, icon: icon2, path: '#!', title: 'Reason 2',
-  description: `Additional Content for reason 2`,
+  id: 2, icon: icon2, path: '#!', title: '',
+  description: `you will find your band based on their genre, price and location`,
 },
 {
-  id: 3, icon: icon3, path: '#!', title: 'Reason 3',
-  description: `Additional Content for reason 3`,
+  id: 3, icon: icon3, path: '#!', title: '',
+  description: `we offer alternative bands for venues in case of artist's cancellation.`,
 }];
-const benefitted = [{id: 1, label: 'John Doe'},{id: 2, label: 'Jane Smith'},{id: 3, label: 'Jack Wilks'}]
+const benefitted = [{ id: 1, label: 'Regent Theater' }, { id: 2, label: 'PianoFight' }, { id: 3, label: 'Revolution Cafe' }]
 
 
 
@@ -53,10 +53,10 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <Layout logoName={productName}>
-        <Banner productName={productName} tagline={tagline} img={image1}/>
-        <Services visionStatement={visionStatement} feature={features}/>
+        <Banner productName={productName} tagline={tagline} img={image1} />
+        <Services visionStatement={visionStatement} feature={features} />
         <UltimateFeatures valuePropositions={valuePropositions} />
-        <WorkHard benefitted={benefitted} img={image2}/>
+        <WorkHard benefitted={benefitted} img={image2} />
       </Layout>
     </ThemeProvider>
   );

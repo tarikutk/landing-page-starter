@@ -7,7 +7,7 @@ import workHard from 'assets/images/work-hard.png';
 import emoji from 'assets/images/icons/emoji.png';
 import check from 'assets/images/icons/check-circle.png';
 
-const WorkHard = ({benefitted, img}) => {
+const WorkHard = ({ benefitted, img }) => {
   return (
     <Box as="section" variant="section.workHard">
       <Container>
@@ -16,8 +16,8 @@ const WorkHard = ({benefitted, img}) => {
             <SectionHeading
               emoji={emoji}
               sx={styles.heading}
-              title="Our Product Benefits..."
-              description="for the consumer"
+              title="Our Platform Benefits..."
+              description="Independent music groups, live music clubs and venues"
             />
             <Box sx={styles.features}>
               {benefitted?.map(({ id, label }) => (

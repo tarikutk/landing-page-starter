@@ -1,7 +1,7 @@
 export default [
   {
     path: 'home',
-    label: 'Product Info',
+    label: 'Mission',
   },
   {
     path: 'services',
@@ -9,6 +9,6 @@ export default [
   },
   {
     path: 'features',
-    label: 'Value Proposition',
+    label: 'What we offer',
   },
 ];
